@@ -1,6 +1,6 @@
 form {
   background-color: #062226;
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,24 +14,24 @@ form {
   border-radius: 5px;
 }
 
-input[type="text"] {
+input {
   background-color: white;
   color: #062226;
   border: 1px solid gray;
-  padding: 0.5rem;
-  margin-right: 0.5rem;
+  padding: 8px;
+  margin-right: 8px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 button {
   background-color: #062226;
   color: white;
   border: 1px solid #062226;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 button:hover {
