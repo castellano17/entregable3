@@ -12,18 +12,25 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 10px;
+  padding: 6px 10px;
   background-color: #062226;
   border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .residentCard__status-circle {
   width: 12px;
-  aspect-ratio: 1;
+  height: 12px;
   background-color: red;
   border-radius: 50%;
 }
 
+.Alive {
+  background-color: greenyellow;
+}
+
+.unknown {
+  background-color: gray;
+}
 .residentCard__status-name {
   font-weight: normal;
   font-size: 15px;
@@ -33,21 +40,27 @@
   padding: 20px;
 }
 
-.residentCar__name {
+.residentCard__name {
   margin-bottom: 10px;
   font-size: 25px;
 }
 
-.residentCar__list {
+.residentCard__line {
+  position: relative;
+  width: 200%;
+  left: -40px;
+}
+
+.residentCard__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.residentCar__item {
+.residentCard__item {
   line-height: 20px;
 }
-.residentCar__item span {
-  color: gray;
+.residentCard__item span {
+  color: rgba(128, 128, 128, 0.845);
   font-weight: bold;
   display: block;
 }
