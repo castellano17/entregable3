@@ -4,7 +4,7 @@ import './styles/ResidentForm.css'
 const ResidentForm = ({ handleSubmit }) => {
     return (
 
-        <form onSubmit={handleSubmit}>
+        <form className='header' onSubmit={handleSubmit}  >
             <input id='idLocation' type="text" placeholder='Type a location id' />
             <button>Search</button>
         </form>

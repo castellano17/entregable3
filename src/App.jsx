@@ -17,6 +17,7 @@ function App() {
   const [nameLocation, setNameLocation] = useState('')
   //estado paginación
   const [page, setPage] = useState(1)
+  const [currentPage, setCurrentPage] = useState(1)
 
   //función que se ejecuta en el submit del formulario
   const handleSubmit = (e) => {
@@ -45,9 +46,11 @@ function App() {
     <div className="App">
       <ResidentForm handleSubmit={handleSubmit} />
       <LocationInfo location={location} />
-      <Pagination numbersPage={numbersPage} setPage={setPage} location={location} RESIDENTS_PERPAGE={RESIDENTS_PERPAGE} />
+      <Pagination numbersPage={numbersPage} setPage={setPage} location={location} RESIDENTS_PERPAGE={RESIDENTS_PERPAGE} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+
       <ResidentList pagination={pagination} />
-      <Pagination numbersPage={numbersPage} setPage={setPage} location={location} RESIDENTS_PERPAGE={RESIDENTS_PERPAGE} />
+      <Pagination numbersPage={numbersPage} setPage={setPage} location={location} RESIDENTS_PERPAGE={RESIDENTS_PERPAGE} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+
     </div >
 
   )
