@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import './styles/ResidentCard.css'
 
 const ResidentCard = ({ residentUrl }) => {
     const [residentinfo, setResidentinfo] = useState()
@@ -11,16 +12,20 @@ const ResidentCard = ({ residentUrl }) => {
             .catch((err) => console.log(err))
     }, [])
     return (
-        <article>
-            <div>
+        <article className='residentCard'>
+            <div className='residentCard__img'>
                 <img src={residentinfo?.image} alt="" />
             </div>
-            <section>
-                <h3>{residentinfo?.name}</h3>
-                <ul>
-                    <li><span>Specie: </span>{residentinfo?.species}</li>
-                    <li><span>Origin: </span>{residentinfo?.origin.name}</li>
-                    <li><span>Episodes where apppears: </span>{residentinfo?.episode.length}</li>
+            <div className="residentCard__status">
+                <div className='residentCard__status-circle'></div>
+                <h4 className='residentCard__status-name'>{residentinfo?.status}</h4>
+            </div>
+            <section className='residentCard__info'>
+                <h3 className='residentCard__name'>{residentinfo?.name}</h3>
+                <ul className='residentCard__list'>
+                    <li className='residentCard__item'><span>Specie: </span>{residentinfo?.species}</li>
+                    <li className='residentCard__item'><span>Origin: </span>{residentinfo?.origin.name}</li>
+                    <li className='residentCard__item'><span>Episodes where apppears: </span>{residentinfo?.episode.length}</li>
                 </ul>
             </section>
         </article>
