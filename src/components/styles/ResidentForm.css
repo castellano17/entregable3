@@ -7,10 +7,12 @@ form {
 }
 
 .header {
-  background-image: url(/rick.jpg);
+  background-image: url(/HeaderImage.jpg);
   height: 230px;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   border-radius: 5px;
 }
 
