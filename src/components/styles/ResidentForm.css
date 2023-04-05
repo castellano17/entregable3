@@ -16,6 +16,11 @@ form {
   border-radius: 5px;
 }
 
+.search {
+  width: 100%;
+  text-align: center;
+}
+
 input {
   background-color: white;
   color: #062226;
@@ -24,6 +29,7 @@ input {
   margin-right: 8px;
   border-radius: 5px;
   font-size: 16px;
+  margin-bottom: 5px;
 }
 
 button {
