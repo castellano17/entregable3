@@ -6,6 +6,11 @@
   position: relative;
 }
 
+.residentCard:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+}
+
 .residentCard__status {
   position: absolute;
   top: 25px;

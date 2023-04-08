@@ -22,7 +22,7 @@
   color: white;
 }
 
-.pagination li.selected {
+.pagination__page.selected {
   background-color: #062226;
   color: white;
 }

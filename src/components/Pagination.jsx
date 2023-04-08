@@ -13,14 +13,15 @@ const Pagination = ({
     <ul className="pagination">
       {numbersPage(location, RESIDENTS_PERPAGE).map((numberPage) => (
         <li
-          className={currentPage === numberPage ? "selected" : ""}
+          className={`pagination__page ${
+            currentPage === numberPage && "selected"
+          }`}
           onClick={() => {
             setPage(numberPage);
             setCurrentPage(numberPage);
           }}
           key={numberPage}
         >
-          {" "}
           {numberPage}
         </li>
       ))}
